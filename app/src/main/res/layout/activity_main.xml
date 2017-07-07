@@ -13,9 +13,10 @@
         android:adjustViewBounds="true"
         app:ckFacing="back"
         app:ckFlash="off"
-        app:ckJpegQuality="50">
+        app:ckJpegQuality="50"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
 
-    </com.flurgle.camerakit.CameraView>
 
     <ImageView
         android:layout_width="40dp"
@@ -25,6 +26,15 @@
         android:layout_margin="16dp"
         android:adjustViewBounds="true"
         android:background="@android:color/holo_red_light"/>
+
+    <ImageView
+        android:id="@+id/image_view_preview"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="20dp"
+        android:adjustViewBounds="true"/>
 
 
 </RelativeLayout>
