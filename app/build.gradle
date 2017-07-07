@@ -17,6 +17,12 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField("String", "CAMERA_EMAIL", "\"camera@yopeso.com\"")
+            buildConfigField("String", "CAMERA_PWD", "\"123456\"")
+        }
+        debug {
+            buildConfigField("String", "CAMERA_EMAIL", "\"camera@yopeso.com\"")
+            buildConfigField("String", "CAMERA_PWD", "\"123456\"")
         }
     }
 }
@@ -32,7 +38,14 @@ dependencies {
 
     testCompile 'junit:junit:4.12'
 
-    androidTestCompile ('com.android.support.test.espresso:espresso-core:2.2.2', {
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
+    compile 'com.google.firebase:firebase-storage:11.0.1'
+    compile 'com.google.firebase:firebase-auth:11.0.1'
+    compile 'com.google.firebase:firebase-database:11.0.1'
+    compile 'com.firebaseui:firebase-ui-database:1.2.0'
 }
+
+
+apply plugin: 'com.google.gms.google-services'
