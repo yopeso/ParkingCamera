@@ -19,6 +19,7 @@
 
 
     <ImageView
+        android:id="@+id/start_stop_button"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_alignParentBottom="true"
