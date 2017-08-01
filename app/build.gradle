@@ -1,6 +1,6 @@
 apply plugin: 'com.android.application'
-
 apply plugin: 'kotlin-android'
+apply plugin: 'io.fabric'
 
 android {
     compileSdkVersion 25
@@ -35,6 +35,9 @@ dependencies {
     compile 'com.flurgle:camerakit:0.9.17'
     compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlinVersion"
     compile 'net.danlew:android.joda:2.9.9'
+    compile('com.crashlytics.sdk.android:crashlytics:2.6.8@aar') {
+        transitive = true;
+    }
 
     testCompile 'junit:junit:4.12'
 
