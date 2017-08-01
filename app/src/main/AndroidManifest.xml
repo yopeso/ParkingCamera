@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="yopeso.com.parkingcamera">
-
     <application
         android:name=".MainApplication"
         android:allowBackup="true"
@@ -19,6 +18,9 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="4d7b0034eb81fcc2c7d19fb3beacc41214bb28fd" />
     </application>
 
 </manifest>
